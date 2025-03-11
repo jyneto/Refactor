@@ -1,0 +1,39 @@
+footer {
+  height: 50px;
+  min-height: 50px;
+  padding: 1rem;
+  background-color: #444444e3;
+  color: rgba(255, 128, 0, 0.69);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Ensures the text and icons align properly */
+.footer-text {
+  margin: 0; /* Remove default margin */
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+/* Social icons section */
+.social-icons {
+  display: flex;
+  gap: 1rem; /* Adds space between icons */
+  padding-left: 2rem;
+}
+
+/* Styling for icons */
+.icon {
+  font-size: 24px;
+  color: rgba(255, 128, 0, 0.69);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: rgb(255, 166, 0);
+}

@@ -1,0 +1,52 @@
+
+.skillsTools-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .header-title{
+    color: rgba(255, 128, 0, 0.884);
+    
+
+  }
+  .title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: rgba(255, 128, 0, 0.69);
+    text-decoration: underline;
+
+  }
+  
+  .skillsTools-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .skills-cards {
+    flex: 1 1 300px;
+    max-width: 250px;
+    margin-top: 1rem;
+    padding: 2rem;
+    background-color: rgba(224, 219, 219, 0.363);
+    color: white;
+    border-radius: 8px;
+  } 
+  
+  .cards h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .cards ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cards ul li {
+    margin-bottom: 0.5rem;
+  }

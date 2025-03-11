@@ -1,0 +1,68 @@
+/* Lägg Skills.css */
+.aboutMe-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.header-title{
+  padding: 1.5rem;
+  /* text-decoration: underline; */
+}
+.aboutMe-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.aboutMe-cards {
+  max-width: 620px;
+  padding: 1rem;
+  background-color: rgba(224, 219, 219, 0.363);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+}
+
+.aboutMe-cards li{
+  text-align: left;
+}
+
+.aboutMe-page h2,
+.aboutMe-page h3
+{
+  text-align: center;
+}
+
+.text-bold{
+  font-weight: bolder;
+  color: #444444e3;
+}
+.testimonial-text {
+  font-style: italic;
+}
+
+.linkedIn-link {
+  text-decoration: none;
+  color: rgba(255, 217, 0, 0.733);
+}
+
+.linkedIn-link:hover {
+  text-decoration: underline;
+  color: rgba(255, 128, 0, 0.69);
+}
+
+.intro {
+  background-color: #444444e3;
+}
+
+/* Responsive: Stack columns on smaller screens */
+@media (max-width: 768px) {
+  .aboutMe-container {
+    flex-direction: column;
+  }
+}

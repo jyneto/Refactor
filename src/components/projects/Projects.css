@@ -1,0 +1,74 @@
+/* Make the project section fit the screen */
+.git-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  /* justify-content: center; /* Centers content vertically*/
+  text-align: center;
+  /* background-color: rgb(47, 79, 79); */
+  /* background-color: rgba(47, 79, 79, 0.839); */
+
+  width: 100%;
+  padding: 2rem;
+  flex: 1;
+  min-height: 0;
+}
+.project-h1 {
+  margin: 0;
+  padding: 0;
+  /* color: rgba(255, 128, 0, 0.69); */
+  color: rgba(255, 128, 0, 0.884); 
+}
+
+.project-title {
+  text-decoration: underline;
+  color: rgba(255, 128, 0, 0.69); 
+  /* color: #444444e3; */
+}
+
+/* Center projects in rows */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Keeps content centered */
+  gap: 1.5rem;
+  max-width: 80%;
+  flex-grow: 1; /* Expands without pushing footer */
+}
+
+.project-link{
+  text-decoration: none;
+  color: #444444e3;
+}  
+
+.project-link:hover{
+  text-decoration: underline;
+  color: rgba(255, 128, 0, 0.69);
+}
+
+/* Card Styling */
+.cards {
+  width: 19rem;
+  padding: 1rem;
+  margin: 1rem;
+  line-height: 1.8;
+  color: white; 
+  background-color: rgba(224, 219, 219, 0.363);
+  text-align: center;
+  border-radius: 0.5em;
+  /* box-shadow: 0px 8px 10px rgb(47, 79, 79); */
+}
+
+.cards:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5rem rgb(222, 219, 219);
+}
+
+.puff-loader {
+  margin-top: 5rem;
+}
+
+.h1-puffloader{
+  color: aqua;
+}
