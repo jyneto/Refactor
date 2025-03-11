@@ -1,0 +1,132 @@
+header {
+  display: flex;
+  padding: 5px;
+  background-color: #444444e3;
+  box-shadow: 0 0 15px rgb(255, 228, 196);
+}
+
+nav {
+  margin: auto;
+  gap: 1.8em;
+}
+
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+header nav ul li a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(255, 128, 0, 0.69);
+  padding: 0.2rem;
+}
+
+header nav ul li a:hover {
+  color: rgba(255, 128, 0, 0.69);
+  background-color: rgba(88, 86, 86, 0);
+  border-radius: 0.3rem;
+  box-shadow: 5px 5px 5px rgb(255, 228, 196);
+}
+
+
+nav ul li .active-link {
+  font-weight: bold;
+  text-decoration: none;
+  color: rgba(255, 128, 0, 0.69); 
+  border-radius: 0.3rem;
+  box-shadow: 5px 5px 5px rgb(255, 228, 196);
+
+}
+
+.logo {
+  text-decoration: none;
+  height: 1em;
+  margin: auto;
+  font-family: "Tangerine", cursive;
+  color: bisque;
+}
+#nav-toggle {
+  display: none;
+}
+
+.toggle-input {
+  display: none; 
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  right: 20px;
+  color: rgba(255, 128, 0, 0.69);
+}
+.close-menu {
+  display: none;}
+
+@media (max-width: 768px) {
+ 
+
+  .toggle-input {
+    display: block; 
+    position: fixed;
+    right: 50px; 
+    z-index: 1001;
+  }
+  header nav ul {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  header nav li {
+    padding-top: 2rem;
+  }
+
+  .home-image img {
+    margin-top: 2rem;
+  }
+
+  .navbar {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 20px; 
+  }
+
+  nav ul.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    padding-top: 60px;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    /* height: 100vh;  */
+    background-color: rgba(47, 79, 79, 0.95); 
+    z-index: 1000;
+  }
+
+  nav ul.open li a:active {
+    color: rgba(255, 128, 0, 0.9);
+    background-color: rgba(47, 79, 79, 0.9);
+    border-radius: 0.3rem;
+    box-shadow: 5px 5px 5px rgb(255, 228, 196);
+  }
+
+  nav ul.open li a:hover {
+    color: rgba(255, 128, 0, 0.69);
+    background-color: rgba(47, 79, 79, 0.9);
+    border-radius: 0.3rem;
+    box-shadow: 5px 5px 5px rgb(255, 228, 196);
+  }
+  
+}

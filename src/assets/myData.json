@@ -1,0 +1,98 @@
+{
+    "user": "Jane Toledo",
+    "resumé": [
+        {
+            "company": "March 2020 -  Present | Linoljemålarna AB",
+            "jobTitle": "Painter",
+            "description": "Over seven years of painting experience, including restoration projects requiring precision and care, as well as managing and completing projects efficiently."
+        
+        },
+        {
+            "company": "June 2018 - March 2020 | Alviks Måleri AB",
+            "jobTitle": "Painter",
+            "description": "Started as an apprentice, demonstrating drive and dedication through proactive efforts to secure the position."
+
+    
+        },
+        {
+            "company":"June 2014 - June 2018 | Swedavia Arlanda Airport",
+            "jobTitle":"Airport Duty Officer",
+            "description":"Responsible for passenger safety, gaining valuable experience in customer service and managing sensitive situations."
+        }
+
+    ],
+
+    "frontEnd":[
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "JQuery",
+        "React - ongoing"
+
+    ],
+    "backEnd":[
+        "C#",
+        ".NET",
+        "Entity Framework",
+        "SQL",
+        "PHP",
+        "RESTful APIs"
+    ],
+    "tools": [
+        "Github",
+        "Visual Studio",
+        "Visual Studio Code",
+        "SSMS",
+        "XAMP",
+        "MySQL"
+    ],
+
+    "upComming" : [
+
+        "ASP.NET Core - upcomming",
+        "Azure - upcomming ",
+        "Agile methology - ongoing"
+    ],
+
+    "education": [
+        {
+            "institution": "Chas Academy",
+            "degree": "Fullstack .NET Developer",
+            "year": "2024 - ongoing ",
+            "description": "This program focuses on the C# programming language. This gives me skills in creating and maintaining web and business applications. The program includes both frontend development and backend development with APIs and microservices as well as database management. It also includes Agile methodology, which is a way of working that is used in many companies today."
+        },
+
+        {
+            "institution": "ASTAR Solna Östersund",
+            "degree": "Programming",
+            "year": "2023",
+            "description" : "With this program, I learned the fundamental knowledge needed for programming. In addition, the ability to identify, fix, and prevent syntax errors, program runtime errors, and programming logic errors is developed."
+        },
+
+        {
+            "institution": "Alviks Måleri AB",
+            "degree": "Apprenticeship ",
+            "year": "2016 - 2018",
+            "description" : "3 years working as an apprentice in this branch I´ve learned how to understand the dynamic of junior and a senior. How important it is to have ambition and focus in learning and being able to admit when I´ve made misstakes."
+        },
+
+        {
+            "institution": "Bolandsskolan ",
+            "degree": "Furnituremaker",
+            "year": "2013 - 2014",
+            "description" : "Attention to details and precisition is a must. Here I've learned how to both read, draw blueprints and build furnitures from scratch."
+        }
+    ],
+
+    "languages" : [
+   
+        "Swedish : Fluent",
+        "Tagalog : Bilingual level",
+        "English : Bilingual level"
+    ]
+
+  
+    
+
+
+}
