@@ -10,7 +10,8 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <Router basename="/Refactor">
+    <Router >
+    //  basename="/Refactor"
       <Navbar />
       <main className="main-content">
         <Routes >
