@@ -60,6 +60,7 @@
   padding: 5rem;
   background-color: rgba(47, 79, 79, 0.839);
   border-radius: 0.8rem;
+  opacity: 6;
 } 
 
 .modal {
@@ -95,4 +96,10 @@
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media screen {
+  .contacts-result{
+    margin: 0 24px;
+  }
 }
