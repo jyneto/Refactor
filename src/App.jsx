@@ -10,10 +10,10 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <Router >
+    <Router basename="/Refactor">
       <Navbar />
       <main className="main-content">
-        <Routes basename="/Refactor">
+        <Routes >
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<AboutMe />}></Route>
           <Route path="/experience" element={<Experience />}></Route>
