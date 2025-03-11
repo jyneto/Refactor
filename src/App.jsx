@@ -10,26 +10,10 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    // <>
-    // <Navbar fixed="top" />
-    //   <main>
-    //     <section id="home"><Home /></section>
-    //     <section id="experience"><Experience /></section>
-    //     <section id="skills"><Skills /></section>
-    //     <section id="about"><AboutMe /></section>
-    //     <section id="projects"><Projects /></section>
-    //     <section id="contact"><Contact /></section>
-
-    //   </main>
-
-    //   <Footer />
-
-    // </>
-
-    <Router>
+    <Router basename="/Refactor">
       <Navbar />
       <main className="main-content">
-        <Routes basename="/Refactor">
+        <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<AboutMe />}></Route>
           <Route path="/experience" element={<Experience />}></Route>
