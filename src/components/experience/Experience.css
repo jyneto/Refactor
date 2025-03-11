@@ -45,7 +45,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+   
 
   }
 
@@ -57,10 +57,10 @@
 
  
   /* Add some spacing between the two sections */
-  .experience-section,
+  /* .experience-section,
   .education-section {
     margin-bottom: 3rem;
-  }
+  } */
   
   /* Arrange the cards in rows with wrapping */
   .experience-part,
@@ -68,7 +68,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: flex-start;  /* Change to center if you prefer centered cards */
+    justify-content: center;  /* Change to center if you prefer centered cards */
   }
   
   /* Style for each card */
