@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import './Contact.css';  // Import the CSS file
+import './Contact.css';
 
 export default function ContactsContent() {
   const [result, setResult] = React.useState("");

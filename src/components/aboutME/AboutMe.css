@@ -1,4 +1,4 @@
-/* Lägg Skills.css */
+
 .aboutMe-page {
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@
 }
 .header-title{
   padding: 1.5rem;
-  /* text-decoration: underline; */
+ 
 }
 .aboutMe-grid {
   display: flex;
@@ -60,7 +60,6 @@
   background-color: #444444e3;
 }
 
-/* Responsive: Stack columns on smaller screens */
 @media (max-width: 768px) {
   .aboutMe-container {
     flex-direction: column;

@@ -1,20 +1,5 @@
-// import React from 'react';
-// import './Footer.css';
-
-// export default function Footer() {
-//   return (
-//     <>
-//         <div className="footer">
-//         <p>© 2025 J.Toledo | All rights reserved</p>
-//         </div>
-     
-//     </>
-//   );
-// }
-
-/* utan icon */
 import React from 'react';
-import { FaGithub, FaLinkedin } from "react-icons/fa"; // Import icons
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import './Footer.css';
 
 export default function Footer() {
