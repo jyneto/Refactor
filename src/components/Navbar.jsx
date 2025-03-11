@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Menu, X } from "lucide-react"; // Import icons
+import { Menu, X } from "lucide-react"; 
 import "./Navbar.css";
 
 export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleMenu = () => setIsNavOpen(!isNavOpen);
-  const closeMenu = () => setIsNavOpen(false); // Closes menu when clicking a link
+  const closeMenu = () => setIsNavOpen(false); 
 
   return (
     <>

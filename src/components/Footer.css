@@ -11,22 +11,20 @@ footer {
   flex-shrink: 0;
 }
 
-/* Ensures the text and icons align properly */
 .footer-text {
-  margin: 0; /* Remove default margin */
+  margin: 0; 
   font-size: 14px;
   display: flex;
   align-items: center;
 }
 
-/* Social icons section */
+
 .social-icons {
   display: flex;
-  gap: 1rem; /* Adds space between icons */
+  gap: 1rem;
   padding-left: 2rem;
 }
 
-/* Styling for icons */
 .icon {
   font-size: 24px;
   color: rgba(255, 128, 0, 0.69);
