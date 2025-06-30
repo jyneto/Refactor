@@ -1,16 +1,17 @@
-import MyImage from "../../assets/profil1.webp";
+import MyImage from "../../assets/GenProfile.png";
+import {Link} from "react-router-dom";
 
 export default function HomeContent() {
   return (
     <div className="home-grid">
       <div className="home-text">
         <h5 className="h2home">Hi,my name is</h5>
-      
-          <span className="text-cursive">Jane Toledo</span>
-        
+
+        <span className="text-cursive">Jane Toledo</span>
+
         <p>
-          I’m a Full-Stack .NET Developer student, a former painter, a full-time
-          mom, a hopeless romantic, and a gym rat who mostly lifts… excuses.
+          I’m a Full-Stack .NET Developer student, a former painter, a devoted
+          parent, a hopeless romantic, and a gym rat who mostly lifts… excuses.
         </p>
         <p>
           My hunger for learning programming? Endless. My determination to
@@ -28,12 +29,12 @@ export default function HomeContent() {
         <p>
           Still curious? Check out my projects and see what I’ve been up to!
         </p>
-        <a href="projects" className="viewProject-button">
+        <Link to="/projects" className="viewProject-button">
           View Projects
-        </a>
+        </Link>
       </div>
       <div className="home-image">
-        <img src={MyImage} alt="Jane Toledo" />
+        <img src={MyImage} alt="Generated profile image of Jane Toledo" />
       </div>
     </div>
   );
