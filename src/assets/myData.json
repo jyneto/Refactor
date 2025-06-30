@@ -1,21 +1,27 @@
 {
     "user": "Jane Toledo",
     "resumé": [
+         {
+            "company": "April 2025- June 2025 Chas Challenge",
+            "jobTitle": "Fullstack .NET Developer",
+            "description": "Participated in a 6-week intensive challenge at Chas Academy, where I collaborated with a team to develop a fullstack application using C#, .NET, and React. This experience honed my skills in Agile methodologies, teamwork, and project management."
+        
+        },
         {
-            "company": "March 2020 -  Present | Linoljemålarna AB",
+            "company": "March 2020 -  Present Linoljemålarna AB",
             "jobTitle": "Painter",
             "description": "Over seven years of painting experience, including restoration projects requiring precision and care, as well as managing and completing projects efficiently."
         
         },
         {
-            "company": "June 2018 - March 2020 | Alviks Måleri AB",
+            "company": "June 2018 - March 2020 Alviks Måleri AB",
             "jobTitle": "Painter",
             "description": "Started as an apprentice, demonstrating drive and dedication through proactive efforts to secure the position."
 
     
         },
         {
-            "company":"June 2014 - June 2018 | Swedavia Arlanda Airport",
+            "company":"June 2014 - June 2018 Swedavia Arlanda Airport",
             "jobTitle":"Airport Duty Officer",
             "description":"Responsible for passenger safety, gaining valuable experience in customer service and managing sensitive situations."
         }
@@ -85,10 +91,9 @@
     ],
 
     "languages" : [
-   
-        "Swedish : Fluent",
-        "Tagalog : Bilingual level",
-        "English : Bilingual level"
+        "Swedish : Fluent in speaking and writing",
+        "English : Fluent in speaking and writing",
+        "Tagalog : Fluent in speaking and writing"
     ]
 
   

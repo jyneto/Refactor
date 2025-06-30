@@ -1,7 +1,7 @@
 header {
   display: flex;
   padding: 5px;
-  background-color: #444444e3;
+  background-color: #2524247e;
   box-shadow: 0 0 15px rgb(255, 228, 196);
 }
 
@@ -21,12 +21,13 @@ header nav ul li a {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  color: rgba(255, 128, 0, 0.69);
-  padding: 0.2rem;
+  color: rgb(255 112 0);
+  padding: 0.3rem 0.3rem;
 }
 
 header nav ul li a:hover {
-  color: rgba(255, 128, 0, 0.69);
+  /* color: rgba(255, 128, 0, 0.69); */
+  color: rgb(255 112 0);
   background-color: rgba(88, 86, 86, 0);
   border-radius: 0.3rem;
   box-shadow: 5px 5px 5px rgb(255, 228, 196);
@@ -36,7 +37,8 @@ header nav ul li a:hover {
 nav ul li .active-link {
   font-weight: bold;
   text-decoration: none;
-  color: rgba(255, 128, 0, 0.69); 
+  /* color: rgba(255, 128, 0, 0.69);  */
+  color: rgb(255 112 0);
   border-radius: 0.3rem;
   box-shadow: 5px 5px 5px rgb(255, 228, 196);
 
@@ -61,20 +63,23 @@ nav ul li .active-link {
   font-size: 30px;
   position: absolute;
   right: 20px;
-  color: rgba(255, 128, 0, 0.69);
+  /* color: rgba(255, 128, 0, 0.69); */
+  color: rgb(255 112 0);
 }
+
 .close-menu {
   display: none;}
 
 @media (max-width: 768px) {
- 
-
   .toggle-input {
     display: block; 
     position: fixed;
-    right: 50px; 
     z-index: 1001;
+    border-radius: 50%;
+    border-color: rgb(255 112 0);
+    transition: top 0.3s ease; 
   }
+
   header nav ul {
     display: none;
     height: 100vh;
@@ -98,35 +103,50 @@ nav ul li .active-link {
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    padding: 10px 20px; 
+  }
+
+  /* Reset nav margin for mobile */
+  nav {
+    margin: 0;
+
   }
 
   nav ul.open {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: fixed;
-    padding-top: 60px;
-    top: 0;
+    top:0;
     left: 0;
-    width: 100vw; 
-    /* height: 100vh;  */
-    background-color: rgba(47, 79, 79, 0.95); 
+    width: 100%;
+    height: 100vh;
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+    background-color: bisque;
+    border-radius: 1rem;
     z-index: 1000;
+    list-style: none; /* Remove list styling */
+  }
+
+  nav ul.open li {
+    width: 100%;
+    text-align: center;
+    margin: 0; /* Remove margin */
+    padding: 1rem 0; /* Only vertical padding */
+  }
+
+  nav ul.open li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem; /* Add padding to the link itself */
   }
 
   nav ul.open li a:active {
     color: rgba(255, 128, 0, 0.9);
-    background-color: rgba(47, 79, 79, 0.9);
-    border-radius: 0.3rem;
+    background-color:rgb(216, 192, 162);
     box-shadow: 5px 5px 5px rgb(255, 228, 196);
+    transition: background-color 0.3s ease;
   }
-
-  nav ul.open li a:hover {
-    color: rgba(255, 128, 0, 0.69);
-    background-color: rgba(47, 79, 79, 0.9);
-    border-radius: 0.3rem;
-    box-shadow: 5px 5px 5px rgb(255, 228, 196);
-  }
-  
 }

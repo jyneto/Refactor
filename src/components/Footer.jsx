@@ -17,7 +17,7 @@ export default function Footer() {
           <FaGithub className="icon" />
         </a>
         <a
-          href="https://linkedin.com/in/jane-toledo"
+          href="https://www.linkedin.com/in/jane-toledo"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
