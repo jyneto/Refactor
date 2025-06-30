@@ -21,8 +21,7 @@
 }
 
 .project-title {
-  text-decoration: underline;
-  color: rgba(255, 128, 0, 0.69); 
+  color: rgba(0, 0, 0, 0.721);
   /* color: #444444e3; */
 }
 
@@ -39,12 +38,12 @@
 
 .project-link{
   text-decoration: none;
-  color: #444444e3;
+  color: rgba(0, 0, 0, 0.721);
 }  
 
 .project-link:hover{
-  text-decoration: underline;
-  color: rgba(255, 128, 0, 0.69);
+  text-decoration: none !important;
+  color: rgba(0, 0, 0, 0.721);
 }
 
 /* Card Styling */
@@ -71,4 +70,10 @@
 
 .h1-puffloader{
   color: aqua;
+}
+.loading-text {
+  color:aqua;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+
 }
