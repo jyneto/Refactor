@@ -11,15 +11,15 @@ export default function AboutMeContent() {
       <div className="aboutMe-grid">
         <div className="aboutMe-cards">
           <p>
-            I’m a future developer, swapping paintbrushes for problem-solving
-            and pixels. My curiosity? Never-ending. My love for figuring out how
-            things work? Whether it’s tech or DIY projects—I’m all in.
+            I’m a future developer, swapping paintbrushes for problem solving
+            and pixels. My curiosity? Never ending. My love for figuring out how
+            things work? Whether it’s tech or DIY projects I’m all in.
           </p>
           <p>
-            With 17 years of work-life experience, I’ve mastered the art of
+            With 17 years of worklife experience, I’ve mastered the art of
             juggling projects, meeting deadlines, and working with all kinds of
             teams. Paying attention to details and customer needs isn’t just a
-            skill—it’s second nature.
+            skill, it’s second nature.
           </p>
           <p>
             Now, I’m bringing that same focus and drive into the world of
