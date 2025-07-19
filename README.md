@@ -131,10 +131,6 @@ src/
 - **ASTAR Solna Östersund** (2023) - Programming Fundamentals
   - Core programming concepts, syntax, runtime, and logic error handling
 
-### Professional Training
-- **Alviks Måleri AB** (2016 - 2018) - Professional Apprenticeship
-- **Bolandsskolan** (2013 - 2014) - Furniture Making
-
 ## 🌐 Languages
 - **Swedish**: Fluent in speaking and writing
 - **English**: Fluent in speaking and writing
