@@ -24,7 +24,7 @@ export default function Projects() {
 
     Promise.all([fetchOwnRepos, fetchChasChingRepo, fetchChasChingReadme])
       .then(([ownRepos, chasChing, readmePreview]) => {
-        // Filter your own projects
+        // Filter own projects
         const filteredOwn = ownRepos.filter((repo) =>
           ["Stack-List", "SchoolDB"].includes(repo.name)
         );
