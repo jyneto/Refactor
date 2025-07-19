@@ -180,7 +180,7 @@ export default function AboutMeContent() {
             </p>
           </article>
 
-          <arcticle className="testimonials">
+          <article className="testimonials">
             <p className="testimonial-text">
               "Focused, gets things done within the timeframe, humble and open
               to learning from others, responsible, good listener, takes every
@@ -205,7 +205,7 @@ export default function AboutMeContent() {
               </a>
 
             </p>
-          </arcticle>
+          </article>
         </div>
       </div>
     </section>
