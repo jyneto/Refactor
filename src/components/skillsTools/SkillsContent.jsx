@@ -9,7 +9,6 @@ export default function SkillsContent() {
         <h1 className="header-title">Skills & Tools</h1>
 
         <div className="skillsTools-grid">
-          {/* Frontend Skills */}
           <div className="skills-cards">
             <h2 className="title">Frontend</h2>
             <ul>
@@ -18,8 +17,6 @@ export default function SkillsContent() {
               ))}
             </ul>
           </div>
-
-          {/* Backend Skills*/}
 
           <div className="skills-cards">
             <h2 className="title">Backend</h2>
@@ -30,8 +27,6 @@ export default function SkillsContent() {
             </ul>
           </div>
 
-          {/* Language Skills */}
-
           <div className="skills-cards">
             <h2 className="title">Language</h2>
             <ul>
@@ -40,8 +35,6 @@ export default function SkillsContent() {
               ))}
             </ul>
           </div>
-
-          {/* Tools */}
 
           <div className="skills-cards">
             <h2 className="title">Tools</h2>

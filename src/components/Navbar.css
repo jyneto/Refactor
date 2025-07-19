@@ -26,7 +26,6 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  /* color: rgba(255, 128, 0, 0.69); */
   color: rgb(255 112 0);
   background-color: rgba(88, 86, 86, 0);
   border-radius: 0.3rem;
@@ -37,7 +36,6 @@ header nav ul li a:hover {
 nav ul li .active-link {
   font-weight: bold;
   text-decoration: none;
-  /* color: rgba(255, 128, 0, 0.69);  */
   color: rgb(255 112 0);
   border-radius: 0.3rem;
   box-shadow: 5px 5px 5px rgb(255, 228, 196);
@@ -63,7 +61,6 @@ nav ul li .active-link {
   font-size: 30px;
   position: absolute;
   right: 20px;
-  /* color: rgba(255, 128, 0, 0.69); */
   color: rgb(255 112 0);
 }
 
@@ -105,7 +102,6 @@ nav ul li .active-link {
     justify-content: space-between; 
   }
 
-  /* Reset nav margin for mobile */
   nav {
     margin: 0;
 
@@ -121,26 +117,26 @@ nav ul li .active-link {
     left: 0;
     width: 100%;
     height: 100vh;
-    margin: 0; /* Remove any margin */
-    padding: 0; /* Remove any padding */
+    margin: 0; 
+    padding: 0;
     background-color: bisque;
     border-radius: 1rem;
     z-index: 1000;
-    list-style: none; /* Remove list styling */
+    list-style: none; 
   }
 
   nav ul.open li {
     width: 100%;
     text-align: center;
-    margin: 0; /* Remove margin */
-    padding: 1rem 0; /* Only vertical padding */
+    margin: 0; 
+    padding: 1rem 0; 
   }
 
   nav ul.open li a {
     display: block;
     width: 100%;
     text-align: center;
-    padding: 1rem; /* Add padding to the link itself */
+    padding: 1rem; 
   }
 
   nav ul.open li a:active {
