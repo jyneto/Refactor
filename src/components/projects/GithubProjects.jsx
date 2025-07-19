@@ -18,23 +18,22 @@ export default function Projects() {
       "https://api.github.com/repos/CamillaSoderman/Chas-Ching/readme"
     )
       .then((res) => res.json())
-      .then((data) => atob(data.content)) // Decode base64
+      .then((data) => atob(data.content)) 
       .then((content) => content.split("\n").slice(0, 5).join("\n"))
       .catch(() => "README preview unavailable");
 
     Promise.all([fetchOwnRepos, fetchChasChingRepo, fetchChasChingReadme])
       .then(([ownRepos, chasChing, readmePreview]) => {
-        // Filter own projects
+      
         const filteredOwn = ownRepos.filter((repo) =>
-          ["Stack-List", "SchoolDB"].includes(repo.name)
+          ["OOP-Basics--Zoo-", "SchoolDB"].includes(repo.name)
         );
 
-        // Attach README fallback if description is missing
+        
         if (!chasChing.description) {
           chasChing.description = readmePreview;
         }
 
-        // Combine both
         const allProjects = [...filteredOwn, chasChing];
 
         setTimeout(() => {
@@ -54,7 +53,7 @@ export default function Projects() {
             <PuffLoader color="#30dbc8" size={50} />
           </div>
           <p className="loading-text">
-            Loading projects from GitHub using API...
+            Fetching projects from GitHub using API...
           </p>
         </section>
       </main>

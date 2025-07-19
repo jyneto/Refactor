@@ -3,7 +3,6 @@ import MyCv from "../../assets/myData.json";
 export default function Experience() {
   return (
     <section className="experience-page">
-      {/* Experience Section (Top) */}
       <div className="experience-section">
         <h1 className="header-title">Experience</h1>
         <div className="experience-part">
@@ -19,7 +18,6 @@ export default function Experience() {
         </div>
       </div>
 
-      {/* Education Section (Bottom) */}
       <div className="education-section">
         <h1 className="header-title">Education</h1>
         <div className="education-part">
