@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import PuffLoader from "react-spinners/PuffLoader";
 
@@ -7,23 +6,43 @@ export default function Projects() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://api.github.com/users/jyneto/repos")
-      .then((response) => response.json())
-      .then((data) => {
-        const filteredData = data.filter(
-          (repo) =>
-            repo.name &&
-            ["OOP-Basics--Zoo-", "Stack-List", "SchoolDB"].includes(repo.name)
+    const fetchOwnRepos = fetch("https://api.github.com/users/jyneto/repos").then((res) =>
+      res.json()
+    );
+
+    const fetchChasChingRepo = fetch(
+      "https://api.github.com/repos/CamillaSoderman/Chas-Ching"
+    ).then((res) => res.json());
+
+    const fetchChasChingReadme = fetch(
+      "https://api.github.com/repos/CamillaSoderman/Chas-Ching/readme"
+    )
+      .then((res) => res.json())
+      .then((data) => atob(data.content)) // Decode base64
+      .then((content) => content.split("\n").slice(0, 5).join("\n"))
+      .catch(() => "README preview unavailable");
+
+    Promise.all([fetchOwnRepos, fetchChasChingRepo, fetchChasChingReadme])
+      .then(([ownRepos, chasChing, readmePreview]) => {
+        // Filter your own projects
+        const filteredOwn = ownRepos.filter((repo) =>
+          ["Stack-List", "SchoolDB"].includes(repo.name)
         );
 
+        // Attach README fallback if description is missing
+        if (!chasChing.description) {
+          chasChing.description = readmePreview;
+        }
+
+        // Combine both
+        const allProjects = [...filteredOwn, chasChing];
+
         setTimeout(() => {
-          setProjects(filteredData);
+          setProjects(allProjects);
           setLoading(false);
         }, 3000);
       })
-      .catch((error) => {
-        console.log(error);
-      });
+      .catch((error) => console.error("Error fetching projects:", error));
   }, []);
 
   if (loading) {
@@ -34,12 +53,14 @@ export default function Projects() {
           <div className="puff-loader">
             <PuffLoader color="#30dbc8" size={50} />
           </div>
-          <p className="loading-text">Loading projects from Github using API...</p>
+          <p className="loading-text">
+            Loading projects from GitHub using API...
+          </p>
         </section>
       </main>
     );
   }
-  
+
   return (
     <div className="git-projects">
       <h1 className="project-h1">Projects</h1>
@@ -53,7 +74,9 @@ export default function Projects() {
             className="cards project-link"
           >
             <h3 className="project-title">{repo.name}</h3>
-            <p className="project-description">{repo.description}</p>
+            <p className="project-description">
+              {repo.description || "No description available"}
+            </p>
           </a>
         ))}
       </div>
